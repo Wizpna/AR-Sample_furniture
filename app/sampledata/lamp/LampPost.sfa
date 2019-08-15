@@ -1,0 +1,61 @@
+{
+   materials: [
+      {
+         name: "lambert2SG",
+         parameters: [
+            {
+               baseColor: "LampPost_Main",
+            },
+            {
+               baseColorTint: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               metallic: 0.5,
+            },
+            {
+               roughness: 0.5,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      file: "sampledata/lamp/LampPost.obj",
+      name: "LampPost",
+      scale: 0.04,
+      suggested_collision: {
+         center: {
+            x: 0,
+            y: 0,
+            z: 0,
+         },
+         size: {
+            x: 1,
+            y: 1,
+            z: 1,
+         },
+         type: "Box",
+      },
+   },
+   samplers: [
+      {
+         file: "sampledata/lamp/LampPost_Main.png",
+         name: "LampPost_Main",
+         pipeline_name: "LampPost_Main.png",
+      },
+   ],
+   version: "0.51:1",
+}
